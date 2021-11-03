@@ -26,20 +26,17 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
-    justify-items: center;
 }
 
 .logo {
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
-    display: none;
 }
 
 .title {
     font-size: var(--lg);
     margin-bottom: 12px;
-    text-align: center;
 }
 .subtitle {
     color: var(--black);
@@ -69,6 +66,17 @@ body {
     border-radius: 8px;
     border: none;
     color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.secondary-button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
