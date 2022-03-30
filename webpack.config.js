@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -32,11 +33,22 @@ module.exports = {
         ]
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(css|scss)$/,
         use: [
           "style-loader",
           "css-loader",
           "sass-loader",
+        ],
+      },
+      {
+        test: /\.(png|svg|jp(e*)g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/images/[hash]-[name].[ext]',
+            },
+          },
         ],
       }
     ]
@@ -54,5 +66,6 @@ module.exports = {
     allowedHosts: path.join(__dirname, 'dist'),
     compress: true,
     port: 3005,
+    historyApiFallback: true,
   }
 }
