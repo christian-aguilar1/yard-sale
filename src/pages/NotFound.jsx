@@ -1,5 +1,5 @@
-import React from 'react';
-import '../styles/NotFound.scss';
+import React from "react";
+import "../styles/pages/NotFound.scss";
 
 const NotFound = () => {
   return (
@@ -11,6 +11,6 @@ const NotFound = () => {
       </div>
     </div>
   );
-}
+};
 
 export { NotFound };

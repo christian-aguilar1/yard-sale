@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0 51px;
   height: 60px;
   border-bottom: 1px solid var(--white);
   box-sizing: border-box;
@@ -12,23 +12,23 @@ nav {
   padding: 20px 0;
 }
 .logo-navbar {
-  width: 100px;
+  width: 144px;
+  height: 30px;
   /* margin-bottom: 24px; */
 }
 .navbar-left ul,
 .navbar-right ul {
   list-style: none;
   padding: 0;
-  margin-top: 0;
   display: flex;
   align-items: center;
-  height: 60px;
 }
 .navbar-left {
   display: flex;
+  align-items: center;
 }
 .navbar-left ul {
-  margin-left: 12px;
+  margin-left: 53px;
 }
 .navbar-left ul li a,
 .navbar-right ul li a {
