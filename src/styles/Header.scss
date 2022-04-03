@@ -1,3 +1,5 @@
+@use "./vars";
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -10,8 +12,10 @@ nav {
 .menu {
   display: none;
   padding: 20px 0;
+  cursor: pointer;
 }
 .logo-navbar {
+  cursor: pointer;
   width: 144px;
   height: 30px;
   /* margin-bottom: 24px; */
@@ -45,12 +49,28 @@ nav {
 }
 
 .navbar-email {
-  color: var(--black);
-  font-size: var(--sm);
-  margin-right: 12px;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: 300;
+  line-height: 18px;
+  margin-right: 26px;
+  padding: 8px;
+  // width: 180px;
+  border-radius: 8px;
+  img {
+    margin: 0 0 2px 10px;
+  }
+  &:hover {
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+    img {
+      color: var(--hospital-green);
+    }
+  }
 }
 
 .navbar-shopping-cart {
+  cursor: pointer;
   position: relative;
 }
 .navbar-shopping-cart div {
