@@ -8,6 +8,14 @@ import iconArrow from "../assets/icons/arrow.svg";
 const MyOrder = () => {
   const { state } = useContext(AppContext);
 
+  // function that receives a number and converts this number in usd format
+  const formatPrice = (price) => {
+    return price.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+  };
+
   return (
     <aside className="MyOrder">
       <div className="MyOrder__title-container">
@@ -31,7 +39,7 @@ const MyOrder = () => {
           <p>
             <span>Total</span>
           </p>
-          <p>${state.total}</p>
+          <p>{formatPrice(state.total)}</p>
         </div>
         <button className="primary-button">Checkout</button>
       </div>

@@ -5,7 +5,7 @@ import ProductItem from "../components/ProductItem";
 
 import { useGetProducts } from "../hooks/useGetProducts";
 
-const API = "http://api.escuelajs.co/api/v1/products";
+const API = "https://fakestoreapi.com/products";
 
 const ProductList = () => {
   const { products, dataStatus } = useGetProducts(API);
